@@ -1,4 +1,4 @@
-package com.micropos.products;
+package com.micropos.carts;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,10 +8,10 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 @SpringBootApplication
 @EnableCaching
-public class ProductsApplication {
+public class CartsApplication {
     public static void main(String[] args) {
-        System.setProperty("spring.config.name", "product-server");
+        System.setProperty("spring.config.name", "cart-server");
 
-        SpringApplication.run(ProductsApplication.class, args);
+        SpringApplication.run(CartsApplication.class, args);
     }
 }
